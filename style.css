@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    --primary-color: #003366;
+    /* Dark Blue */
+    --background-color: #e6f2ff;
+    /* Light Blue */
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* General Layout */
+.container {
+
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+}
+
+h3.title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Profile Section */
+.profile {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center;
+}
+
+.profile_image {
+    max-width: 150px;
+    margin-right: 2rem;
+}
+
+.profile_info .description {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.profile_name {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.profile_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills Section */
+.skills {
+    margin-bottom: 3rem;
+
+}
+
+.skills_list {
+    list-style: none;
+    padding-left: 1rem;
+
+}
+
+/* Education Section */
+.education,
+.certificate,
+.projects,
+.interests,
+.contact {
+    margin-bottom: 3rem;
+}
+
+.item_preTitle {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.item_title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.item_subtitle {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+/* Interests Section */
+.interest_items {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.interest_item {
+    font-size: 1.5rem;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: #f0f8ff;
+}
+
+.contact_info {
+    margin-top: 1rem;
+}
+
+.contact_info p {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.description a {
+    color: #003366; /* Dark blue for default link color */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.description a:hover {
+    background-color: #003366; /* Dark blue background on hover */
+    color: white; /* White text on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Responsive Design */
+/* For screen sizes 1200px and up */
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 2.5rem;
+    }
+
+    .profile_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile_image {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .description,
+    .contact_info p {
+        font-size: 1.4rem;
+    }
+
+    .title,
+    .item_title {
+        font-size: 1.8rem;
+    }
+}
+
+/* For screen sizes 768px and up (Tablets) */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+        /* Reduce base font size */
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .profile {
+        padding: 1.5rem;
+    }
+
+    .profile_name {
+        font-size: 2rem;
+    }
+
+    .profile_title {
+        font-size: 1.3rem;
+    }
+
+    .description,
+    .contact_info p {
+        font-size: 1.2rem;
+    }
+
+    .title,
+    .item_title {
+        font-size: 1.6rem;
+    }
+
+    .skills_list,
+    .interest_items {
+        font-size: 1.3rem;
+    }
+}
+
+/* For screen sizes 375px and smaller (Mobile) */
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 8px;
+        /* Further reduce font size */
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .profile {
+        padding: 1rem;
+    }
+
+    .profile_name {
+        font-size: 1.8rem;
+    }
+
+    .profile_title {
+        font-size: 1.2rem;
+    }
+
+    .description,
+    .contact_info p {
+        font-size: 1.1rem;
+    }
+
+    .title,
+    .item_title {
+        font-size: 1.5rem;
+    }
+
+    .skills_list,
+    .interest_items {
+        font-size: 1.2rem;
+    }
+}
